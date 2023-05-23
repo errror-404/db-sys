@@ -4,7 +4,7 @@ import React from 'react'
 import Layout from '../components/Layout'
 import { usePathname, useParams } from 'next/navigation';
 
-const page = () => {
+const Tables = () => {
     const router = useRouter();
 
     const query = router.query
@@ -24,4 +24,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Tables
