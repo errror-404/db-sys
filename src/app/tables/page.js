@@ -17,7 +17,7 @@ const Tables = () => {
     axios
       .post(`http://localhost:3000/api/endpoints/${database}`)
       .then(({ data }) => setTables(data.tables));
-  }, [search]);
+  }, [search, database]);
 
   return (
     <Layout title={"Tables"}>

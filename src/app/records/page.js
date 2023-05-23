@@ -18,7 +18,7 @@ const Records = () => {
         database: database,
       })
       .then(({ data }) => setRecords(data.tables));
-  }, [search]);
+  }, [searchm, database]);
 
   if (tableRecords.length === 0)
     return (
@@ -58,8 +58,8 @@ const Records = () => {
                       className="border-t border-neutral-200 dark:border-neutral-700"
                       key={_i}
                     >
-                      {Object.values(item).map((value) => (
-                        <td className="px-6 py-4 whitespace-nowrap">
+                      {Object.values(item).map((value, i) => (
+                        <td className="px-6 py-4 whitespace-nowrap" key={i}>
                           <div className="flex items-center">
                             <div className="ml-4">
                               <div className="text-sm font-medium text-neutral-900 dark:text-neutral-100">
