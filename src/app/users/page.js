@@ -37,8 +37,8 @@ const Users = () => {
                   </tr>
                 </thead>
                 <tbody>
-                  {users.map((user) => (
-                    <tr className="border-b dark:border-neutral-500">
+                  {users.map((user, i) => (
+                    <tr className="border-b dark:border-neutral-500" key={i}>
                       <td className="whitespace-nowrap px-6 py-4 font-medium">
                         {user.host_short}
                       </td>

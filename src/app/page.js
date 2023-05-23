@@ -25,6 +25,7 @@ export default function Home() {
             href={{
               pathname: item.url,
             }}
+            key={key}
           >
             <Card title={item.title} subtitle={item.subtitle} key={key} />
           </Link>

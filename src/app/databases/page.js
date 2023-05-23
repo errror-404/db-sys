@@ -28,6 +28,7 @@ export default function Databases() {
                 pathname: "/tables",
                 query: { database: item.Database },
               }}
+              key={_i}
             >
               <Card title={item.Database} key={_i} />
             </Link>

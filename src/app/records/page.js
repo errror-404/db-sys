@@ -46,7 +46,7 @@ const Records = () => {
                   <tr className="border-t-2">
                     {tableRecords.length > 0 &&
                       Object.keys(tableRecords[0]).map((key) => (
-                        <th scope="col" className="px-6 py-4 ">
+                        <th scope="col" className="px-6 py-4 " key={key}>
                           {key}
                         </th>
                       ))}
@@ -54,7 +54,10 @@ const Records = () => {
                 </thead>
                 <tbody>
                   {tableRecords.map((item, _i) => (
-                    <tr className="border-t border-neutral-200 dark:border-neutral-700">
+                    <tr
+                      className="border-t border-neutral-200 dark:border-neutral-700"
+                      key={_i}
+                    >
                       {Object.values(item).map((value) => (
                         <td className="px-6 py-4 whitespace-nowrap">
                           <div className="flex items-center">

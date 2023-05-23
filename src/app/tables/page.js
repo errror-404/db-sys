@@ -37,6 +37,7 @@ const Tables = () => {
                 pathname: "/records",
                 query: { database: database, table: item },
               }}
+              key={_i}
             >
               <Card title={item} key={_i} url={`records`} />
             </Link>
