@@ -15,11 +15,11 @@ const Tables = () => {
 
   useEffect(() => {
     axios
-      .post(`http://localhost:3000/api/endpoints/${database}`)
+      .post(`https://db-sys.vercel.app/api/endpoints/${database}`)
       .then(({ data }) => setTables(data.tables));
   }, [search, database]);
 
-  return (
+  https: return (
     <Layout title={"Tables"}>
       <div
         className="grid 

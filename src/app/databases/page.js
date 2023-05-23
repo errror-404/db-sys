@@ -12,7 +12,7 @@ export default function Databases() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/api/endpoints")
+      .get("https://db-sys.vercel.app/api/endpoints")
       .then(({ data }) => setDatabases(data.result));
   }, []);
 

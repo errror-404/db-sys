@@ -14,7 +14,7 @@ const Records = () => {
 
   useEffect(() => {
     axios
-      .post(`http://localhost:3000/api/records/${records}`, {
+      .post(`https://db-sys.vercel.app/api/records/${records}`, {
         database: database,
       })
       .then(({ data }) => setRecords(data.tables));
